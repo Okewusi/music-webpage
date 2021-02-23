@@ -1,59 +1,84 @@
-body{
+*{
+    padding: 0;
     margin: 0;
-    border: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color:#2F303A;
 }
-.logo img{
-    width: 52px;
-}
-.logo a{
-    color: white;
+.container{
+ background-color: #2F303A;
+ padding: 15px 80px;  
+ height: 100vh; 
+ overflow: hidden;
 }
 nav{
-    font-size: 15px;
     display: flex;
-    width: 100%;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-li{
-    list-style: none;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
 }
 .logo{
-    width: 200px;  
     display: flex;
     align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+}
+ul{
+    width: 150px;
+    display: flex;
+    list-style: none;
     justify-content: space-around;
+}
+ul a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
 }
 main{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    position: relative;
 }
 .image-container{
-    width: 602px;
-    height: 849px;
+    width: 50%;
     display: flex;
+    height: 100%;
+    align-items: flex-end;
+    position: relative;
+}
+.image-container img{
+    max-width: 22em;
 }
 .texts{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
+    align-items: flex-start;
 }
 .texts h1{
-    font-size: 72px;
+    padding-bottom: 10px;
+    color: white;
+    font-size:35px;
 }
 .texts p{
-    font-size: 36px;
+    color: white;
+    padding-bottom: 30px;
 }
 .texts input{
-    background-color:#1762A7;
+    background-color: #1762A7;
     color: white;
-    padding: 10px 15px;
-    outline: none;
+    padding: 5px 10px;
     border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+@media only screen and (max-width: 1030px) {
+    .image-container img{
+    max-width: 18em;
+    }
 }

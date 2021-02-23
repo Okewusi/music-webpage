@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Soundwave</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+         background-color: #2F303A;
+         padding: 15px 80px;  
+         height: 100vh; 
+         overflow: hidden;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo a{
+            text-decoration: none;
+            padding-left: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        ul{
+            width: 150px;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+        ul a{
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90vh;
+            position: relative;
+        }
+        .image-container{
+            width: 50%;
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+            position: relative;
+        }
+        .image-container img{
+            max-width: 22em;
+        }
+        .texts{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .texts h1{
+            padding-bottom: 10px;
+            color: white;
+            font-size:35px;
+        }
+        .texts p{
+            color: white;
+            padding-bottom: 30px;
+        }
+        .texts input{
+            background-color: #1762A7;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 1030px) {
+            .image-container img{
+            max-width: 18em;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="./img/logo.png" alt="music-app-logo">
+                <a href="/">Soundwave</a>
+            </div>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="image-container">
+                <img src="./img/landing-page-girl.png" alt="enjoying musci">
+            </div>
+            <div class="texts">
+                <h1>Feel The Music</h1>
+                <p>Stream over 1 million songs with one click</p>
+                <input type="submit" name="join"  value = 'Join Now' id="join-btn">
+            </div>
+        </main>
+    </div>
+</body>
+</html>

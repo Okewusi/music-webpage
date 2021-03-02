@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/discover.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <title>Discover</title>
 </head>
 <body>
@@ -20,29 +21,31 @@
             </ul>
         </nav>
         <main>
+            <!--  -->
             <div class="left-container">
-               <h1>Discover new music</h1>
-               <div>
-                    <div class="charts">
-                        <div>
-                            <img src="./img/microphone.svg" alt="microphone-icon">   
-                        </div>
-                        <p>Charts</p>
-                    </div>
-                    <div>
-                        <img src="./img/albums.svg" alt="Albums-icon">
-                        <p>Albums</p> 
-                    </div>
-                    <div>
-                        <img src="./img/more.svg" alt="More-icons">
-                        <p>More</p>
-                    </div>
+                <h1>Discover new music</h1>
+               <div class="icon"> 
+                   <div class="icon-items"><img src="./img/microphone.svg" alt="microphone-icon">   
+                    <caption>Charts</caption></div>
+                    <div class="icon-items"><img src="./img/albums.svg" alt="Albums-icon">
+                    <caption>Albums</caption></div>
+                    <div class="icon-items"><img src="./img/more.svg" alt="More-icons">
+                    <caption>More</caption></div>
                </div> 
+               <p>By joining you can benefit from listening to the latest released musics</p>
             </div>
-            <div class="right container">
-                <img src="./img/covers.jpg" alt="">
-            </div>
+            <img class="cover-image" src="./img/covers.jpg" alt="discover-cover-image">
         </main>
     </div>
+    <footer>
+        <ul class="footer-left">
+            <li><a class="about" href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="/"><span><i class="fab fa-twitter"></i></span></i>Twitter</a></li>
+            <li><a href="/"><span><i class="fab fa-facebook-f"></i></span></i>Facebook</a> </li>
+        </ul>
+    </footer>
 </body>
 </html>

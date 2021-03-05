@@ -1,14 +1,13 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 .container{
- background-color: #2F303A;
- padding: 15px 80px 0px 15px;  
- height: 95vh; 
- overflow: hidden;
+    padding: 15px 80px;
+    width: 100vw;
+    height: 95vh;
+    background-color: #2F303A;
 }
 nav{
     display: flex;
@@ -16,48 +15,40 @@ nav{
     height: 10vh;
     align-items: center;
 }
-.logo{
+nav .logo{
     display: flex;
     align-items: center;
 }
-.logo a{
+nav a{
     text-decoration: none;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: white;
 }
-ul{
-    width: 150px;
+nav ul{
     display: flex;
     list-style: none;
-    justify-content: space-around;
-}
-ul a{
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
 }
 .body-container{
     display: flex;
+    height: 80vh;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
 }
 .body-container .text{
-    display: flex;
     color: white;
-    display: flex;
-    width: 30%;
+    width: 40%;
+    font-size: 2rem;
 }
 strong{
     color: #BC3A80;
-    font-size: 60px;
+    font-size: 5rem;
     font-weight: bold;
 }
-.form-container{
+.body-container .form-container{
     display: flex;
-    width: 60%;
-    height: 70vh;
+    width: 50%;
+    height: 60vh;
     align-items: center;
     justify-content: flex-end;
 }
@@ -66,13 +57,13 @@ form{
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    width: 80%;
-    height: 70vh;
     background-color: rgb(11, 11, 12);
-    padding: 20px;
-    border-radius: 20px;
     color: white;
-    line-height: 20px;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 20px;
+    line-height: 1.2rem;
 }
 form input{
     border: 1px solid  #1762A7; 
@@ -80,22 +71,22 @@ form input{
 }
 #name{
     background-color: transparent;
-    padding: 8px 0;
+    padding: .4rem 0;
     border-radius: 5px;
 }
 #email{
     background-color: transparent;
-    padding: 8px 0;
+    padding: .4rem 0;
     border-radius: 5px;
 }
 #password{
     background-color: transparent;
-    padding: 8px 0;
+    padding: .4rem 0;
     border-radius: 5px;
 }
 #join-now{
-    margin-top: 40px;
-    padding: 8px 0;
+    margin-top: 1rem;
+    padding: .5rem 0;
     background-color: #1762A7;
     border: none;
     border-radius: 5px;
@@ -104,7 +95,37 @@ form input{
 }
 footer{
     display: flex;
-    background-color: rgb(11, 11, 12);
     justify-content: space-between;
+    align-items: flex-end;
+    height: 5vh;
+    background-color: rgb(10, 10, 10);
+    padding: 0px 20px;
 }
-
+footer .footer-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer ul{
+    list-style: none;
+}
+.footer-left a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding-right: 1.2rem;
+}
+footer .footer-right{
+    display: flex;
+    justify-content:right;
+    align-items: flex-start;
+}
+footer i{
+    padding-right: 5px;
+}
+.footer-right a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 1.2rem;
+}

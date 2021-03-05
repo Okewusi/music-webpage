@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 80px;
+    width: 100vw;
+    height: 95vh;
+    background-color: #2F303A;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+}
+main .image{
+    display: flex;
+}
+main .cover-image{
+    width: 60vw;
+    height: auto;
+    max-width: 450px;
+}
+main .left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+main h1{
+     font-size: 2.2rem;
+}
+main p{
+    font-size: 1.2rem;
+}
+main .icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.5rem .75rem 1.5rem 0rem;
+}
+.icon-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .75rem;
+    margin: .5rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 5vh;
+    background-color: rgb(10, 10, 10);
+    padding: 0px 20px;
+}
+footer .footer-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer ul{
+    list-style: none;
+}
+.footer-left a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding-right: 1.2rem;
+}
+footer .footer-right{
+    display: flex;
+    justify-content:right;
+    align-items: flex-start;
+}
+footer i{
+    padding-right: 5px;
+}
+.footer-right a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 1.2rem;
+}
+@media (max-width: 600px){
+    .container{
+        padding: 0px;
+    }
+}

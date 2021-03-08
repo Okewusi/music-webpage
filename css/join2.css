@@ -1,33 +1,5 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
 .container{
-    padding: 15px 80px;
-    width: 100vw;
     height: 95vh;
-    background-color: #2F303A;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    align-items: center;
-}
-nav .logo{
-    display: flex;
-    align-items: center;
-}
-nav a{
-    text-decoration: none;
-    padding-left: 20px;
-    font-size: 1.2rem;
-    color: white;
-}
-nav ul{
-    display: flex;
-    list-style: none;
 }
 .body-container{
     display: flex;
@@ -93,39 +65,51 @@ form input{
     color: white;
     font-size: 18px;
 }
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 5vh;
-    background-color: rgb(10, 10, 10);
-    padding: 0px 20px;
-}
-footer .footer-left{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-footer ul{
-    list-style: none;
-}
-.footer-left a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    padding-right: 1.2rem;
-}
-footer .footer-right{
-    display: flex;
-    justify-content:right;
-    align-items: flex-start;
-}
-footer i{
-    padding-right: 5px;
-}
-.footer-right a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    padding-left: 1.2rem;
+/* @media only screen and (max-width:1000px){
+    .body-container .form-container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-;
+        justify-content: center;
+    }
+    form{
+        height: 100%;
+        padding: 1rem;
+        line-height: 1rem;
+    }
+} */
+@media only screen and (max-width: 600px){
+    .container{
+        height: 95vh;
+        width: 100vw;
+    }
+    .body-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .body-container .text{
+        width: 100%;
+        height: 15%;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    strong{
+        font-size: 2.5rem;
+    }
+    .body-container .form-container{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        height: 80%;
+        padding: 1.5rem;
+        line-height: 1.5rem;
+    }
+
 }

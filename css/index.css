@@ -43,6 +43,12 @@ main{
         padding: .5rem 1rem;
     }
     .image-container img {
-        max-width: 12em;
+        max-width: 22em;
+    }
+    .texts{
+        width: 100%;
+        display: flex;
+        position: absolute;
+        align-items: center;
     }
 }
